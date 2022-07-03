@@ -1,12 +1,14 @@
-# Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.2.0.SKHMIXM release-keys
-# lmi: lmi-user 11 RKQ1.200826.002 V12.5.3.0.RJKMIXM release-keys
+# Unpinned blobs from MIUI Alioth 13.0.6 Europe
 
-# ADSP - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# ADSP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/bin/adsprpcd|2886f08eb674b6ced8bf6e9bb54761094ee7b74c
 vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
-vendor/lib/libadsprpc.so|43b48ee981411210b798187aba937f06bc705bcd
+vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
+vendor/lib/libssc_default_listener.so|e3a7b4fe1b4e31afb6fffcf8fd2babf60db1e894
+vendor/lib/libadsprpc.so|85810841e6e334852c14e407822594f34fe3768d
 vendor/lib64/libadsp_default_listener.so|33f44a23edf2cf734658e762a19dfc207b1921b8
-vendor/lib64/libadsprpc.so|b0f1a52cea3c85fabfd4f8ecb32f74c1cc727de6
+vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
+vendor/lib64/libadsprpc.so|09dad6cfef636c131fdc15924ac5a85c6960568c
 
 # ADSP modules (aptX)
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -71,19 +73,25 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 
-# CDSP - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# CDSP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/bin/cdsprpcd|2257675e907dce9ed4a328d66caae44096221bb8
 vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsprpc.so|b2b0d4082ba33d84b7e5e4de686cc034990aa190
-vendor/lib/libmdsprpc.so|443f3b13568b1b3d10c181b5a7b8fd6df07feda4
-vendor/lib/libsdsprpc.so|9ff8c835783a6e48013f1d7103b752392774192d
+vendor/lib/libcdsprpc.so|370826640e2bf060030d7d562c84e9e856491210
+vendor/lib/libfastcrc.so|9677b12c558025527f5675ff40179715a3125c8c
+vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
+-vendor/lib/libfastcvopt.so|eb6e1052f12b45f2f651f1437e6072459648f2f3
+vendor/lib/libmdsprpc.so|b1eae12351d0012a2d6a80a9318ef2e917e467b1
+vendor/lib/libsdsprpc.so|f0020a3fdf7c5d7f3399b3160a8b69d24cee1fd5
 vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
+vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
 vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
 vendor/lib64/libcdfw_remote_api.so
 vendor/lib64/libcdsp_default_listener.so|23a8dff8e8ab66d23c5de9aa3574dd3c64d113b4
-vendor/lib64/libcdsprpc.so|4ea039b67cec21e35e396cb7ff62f3caa873393d
-vendor/lib64/libmdsprpc.so|7e4146cca5b7a00d3d1be0fb10a2886e0d6cba84
-vendor/lib64/libsdsprpc.so|d9965780fbc36931d9b8bd24a1e966a66896df9e
+vendor/lib64/libcdsprpc.so|4bdd1d7350e83a964e53931287c5ea3f9b3c5099
+vendor/lib64/libfastcvdsp_stub.so|9813b36faa8029bdb358126c2996207fc7704d32
+-vendor/lib64/libfastcvopt.so|0796b9092eb285d7689a8e6c4478a88a1d7e6e87
+vendor/lib64/libmdsprpc.so|4dfd41ece900c72455e194f961f3c47a4fad7272
+vendor/lib64/libsdsprpc.so|4b3bb474f90b3efddd6ddc88afbefa39ce9d08b1
 vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
 
 # Charger (HVDCP)
@@ -159,28 +167,28 @@ vendor/lib64/hw/vendor.qti.hardware.capabilityconfigstore@1.0-impl.so|2163df1cf5
 # Consumer IR
 vendor/lib64/hw/consumerir.default.so:vendor/lib64/hw/consumerir.kona.so
 
-# Display (HDR) - from LA.UM.9.12.r1-14000-SMxx50.0
+# Display (HDR) - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/lib64/libhdr_tm.so|4be3cfff1ef40cbc6ad329b79c60881263aa6723
 vendor/lib64/libhdrdynamic.so|5f25a3b1ff5e58c317652c3b02d52d19cfb77315
 vendor/lib64/libhdrdynamicootf.so|538384bf34a18a001e0a8761d3fa3ab571bda128
 
-# Display (SDM) - from LA.UM.9.12.r1-14000-SMxx50.0
+# Display (SDM) - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/lib64/libdisplayqos.so|15701f18257c43be5657bbd867a8acf1f469e373
 vendor/lib64/libdisplayskuutils.so|1ebb27593b446d5be3300646bf86c8b5b9e59f65
 vendor/lib64/libqseed3.so|c9fb729cf48278d0c87d27c0af17ae3a8ccb1bf7
-vendor/lib64/libsdm-color.so|29cbc16f6fa573d21f48e2be2ff0d51de3357378
+vendor/lib64/libsdm-color.so|09e14227de5d3690a11d523d9e76148ed3327e97
 vendor/lib64/libsdm-colormgr-algo.so|1fb7f3cb11557bbf677afb5d6eda0e4e9fd3ac58
 vendor/lib64/libsdm-diag.so|57e8b57e52b98a0a151434414756fcf91147a511
-vendor/lib64/libsdm-disp-vndapis.so|fd0b0beac164c92bfa012dbc059cb50cdde2dec6
-vendor/lib64/libsdmextension.so|99377ab065105f0cbd17bbe5907cdbb8027a9f17
-vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
+vendor/lib64/libsdm-disp-vndapis.so|2f1abd975b1f1dbabcc410e56c29ac296adcc411
+vendor/lib64/libsdmextension.so|d89a38b3f8ecc283b75621a7702bad8d8417d0f0
 
-# Display postprocessing - from LA.UM.9.12.r1-14000-SMxx50.0
+# Display postprocessing - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/bin/hw/vendor.display.color@1.0-service|9c77c3655befc1c53f842e1b9605b83e3dc64259
 vendor/bin/ppd|c478fa8957564bf1b2649b6ba80c07f72b0b318f
-vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
 vendor/bin/qdcmss|536c34abfbf7833df440bfcd264bacdc88318067
 vendor/etc/init/qdcmss.rc|53d78d686678c4f923a9ec4ace7d4d3575b13788
+vendor/etc/init/vendor.display.color@1.0-service.rc|5ad673f879b3685a0e79b5633437e5499cb94f48
+vendor/lib64/libtinyxml2_1.so|fb0a2b16e5cfd28515268edc5c2345190d1ef4e5
 vendor/lib64/libdisp-aba.so|902839da31464e54bd4756747db2dd7ad867484f
 vendor/lib64/vendor.display.color@1.0.so|a404c41c1bbb827309e4be1576c7c7b493a6f6d6
 vendor/lib64/vendor.display.color@1.1.so|3e5f53e9d8fcf7eae6dcd1cc7eb7609a78647c2e
@@ -247,7 +255,7 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
-# DSP service - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
+# DSP service - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
 vendor/bin/dspservice|081468b9bc63cab921ac1e37a95eb93bd16e23f9
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
@@ -531,20 +539,20 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
-# Neural networks - - from LA.UM.9.12.r1-13700.03-SMxx50.QSSI12.0
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|720981bcf6fcc2bc485704cf41772e2901adc007
+# Neural networks - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|4e82f7fc9be97e772e6933ae9e92b1e4dc0eb239
 vendor/bin/npu_launcher|a0dfb3ef5b495855c9b25881b696ae73eebb6897
 vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
-vendor/lib/libnpu.so|9e28b1eda1c0b07a0476280aa4443324f94740de
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
+vendor/lib/libnpu.so|120988b222a74b236232c94b696528d4c33badcb
+vendor/lib64/libnpu.so|80280ae2197c58dac53471d0d8af090ae844fa22
 vendor/lib64/libhexagon_nn_stub.so|dabb2252d52bfde40d7c1e41487b2912f6d013f3
-vendor/lib64/libhta_hexagon_runtime.so|af8bf751578573816a949e17c65320922df76985
-vendor/lib64/libnpu.so|87f74d9ebe92608a5f99c0db04e250101e2d5755
-vendor/lib64/unnhal-acc-adreno.so|9c5d8c601bad1c6ddf8e26ba9c7d9dc5511ac931
+vendor/lib64/libhta_hexagon_runtime.so|7e452425e8318dfbf3b90275fb87211ddf585b17
+vendor/lib64/unnhal-acc-adreno.so|716f5ad06387c2271083227674da3f9d5a1fc482
 vendor/lib64/unnhal-acc-common.so|0b1e861dc50ddaa2d9e9fc9e031bda50799d9c0a
-vendor/lib64/unnhal-acc-hta.so|4fecd9f66e1bc743ca0ca7077fc1b7a1a35d0636
-vendor/lib64/unnhal-acc-hvx.so|af8ef840f4dfbefccda4f54a9bf534d783c3f064
+vendor/lib64/unnhal-acc-hta.so|b580e82e816097693badbe3d0f6c7af319ab4245
+vendor/lib64/unnhal-acc-hvx.so|381286e2bf7e3ff611673962548c78dfd35bc297
 
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
@@ -603,6 +611,10 @@ vendor/lib64/libOmxSwVencMpeg4.so
 vendor/lib64/libOmxVpp.so
 vendor/lib64/libOmxWmaDec.so
 vendor/lib64/libswvdec.so
+
+# OpenVX - from LA.UM.9.12.r1-14100.01-SMxx50.QSSI13.0
+vendor/lib/libopenvx.so|0caa7c42935a77da34dedafa44a5fa400ad7e45c
+vendor/lib64/libopenvx.so|8b4d13c2e83c27887de0aeede294ee380438b314
 
 # Peripheral manager
 vendor/bin/pm-proxy
