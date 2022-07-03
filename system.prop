@@ -93,7 +93,8 @@ ro.vendor.qti.va_aosp.support=1
 # FUSE passthrough
 persist.sys.fuse.passthrough.enable=true
 
-# SkiaGL Threaded
+# SkiaGL
+debug.hwui.renderer=skiagl
 debug.renderengine.backend=skiaglthreaded
 
 # GPS

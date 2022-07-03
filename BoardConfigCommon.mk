@@ -85,7 +85,6 @@ SOONG_CONFIG_NAMESPACES += qtidisplay
 SOONG_CONFIG_qtidisplay := drmpp gralloc4
 SOONG_CONFIG_qtidisplay_drmpp := true
 SOONG_CONFIG_qtidisplay_gralloc4 := true
-TARGET_USES_VULKAN := true
 BOARD_USES_ADRENO := true
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 NUM_FRAMEBUFFER_SURFACE_BUFFERS := 3
