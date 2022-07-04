@@ -1,14 +1,11 @@
 # Unpinned blobs from MIUI Alioth 13.0.6 Europe
 
-# ADSP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
-vendor/bin/adsprpcd|2886f08eb674b6ced8bf6e9bb54761094ee7b74c
-vendor/etc/init/vendor.qti.adsprpc-service.rc|54588df8e7da58c66838028d2284986b966c2d37
-vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
-vendor/lib/libssc_default_listener.so|e3a7b4fe1b4e31afb6fffcf8fd2babf60db1e894
-vendor/lib/libadsprpc.so|85810841e6e334852c14e407822594f34fe3768d
-vendor/lib64/libadsp_default_listener.so|33f44a23edf2cf734658e762a19dfc207b1921b8
-vendor/lib64/libssc_default_listener.so|1653233f7454f3be9e8361ab5fde7cd45e9ac9b4
-vendor/lib64/libadsprpc.so|09dad6cfef636c131fdc15924ac5a85c6960568c
+# ADSP
+vendor/bin/adsprpcd
+vendor/etc/init/vendor.qti.adsprpc-service.rc
+vendor/lib/libadsprpc.so
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
 
 # ADSP modules (aptX)
 vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDADV_Encoder.so
@@ -73,26 +70,25 @@ vendor/lib/rfsa/adsp/capi_v2_aptX_CLHDAD_Speech_Decoder.so
 vendor/lib/rfsa/adsp/capi_v2_cirrus_sp.so
 vendor/lib/rfsa/adsp/capi_v2_dap_cpdp.so
 
-# CDSP - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
-vendor/bin/cdsprpcd|2257675e907dce9ed4a328d66caae44096221bb8
-vendor/etc/init/vendor.qti.cdsprpc-service.rc|36772b70216796e8ef19376d9c6a81ee9ffff549
-vendor/lib/libcdsprpc.so|370826640e2bf060030d7d562c84e9e856491210
-vendor/lib/libfastcrc.so|9677b12c558025527f5675ff40179715a3125c8c
-vendor/lib/libfastcvdsp_stub.so|7f27cee24281bc9bf4f08c6100cc66bd650d8efb
--vendor/lib/libfastcvopt.so|eb6e1052f12b45f2f651f1437e6072459648f2f3
-vendor/lib/libmdsprpc.so|b1eae12351d0012a2d6a80a9318ef2e917e467b1
-vendor/lib/libsdsprpc.so|f0020a3fdf7c5d7f3399b3160a8b69d24cee1fd5
-vendor/lib/libsysmon_cdsp_skel.so|b0dd56ca83493e68dc7610d44045849bb3bd8c38
-vendor/lib/libadsp_default_listener.so|49d7644708419ea077ffd9d00901ebf6cdd4377c
-vendor/lib64/libcdfw.so|879ec0095789187243316666f584c1cdbe44c894
+# CDSP
+vendor/bin/cdsprpcd
+vendor/etc/init/vendor.qti.cdsprpc-service.rc
+vendor/lib/libcdsprpc.so
+vendor/lib/libfastcrc.so
+vendor/lib/libfastcvdsp_stub.so
+-vendor/lib/libfastcvopt.so
+vendor/lib/libmdsprpc.so
+vendor/lib/libsdsprpc.so
+vendor/lib/libsysmon_cdsp_skel.so
+vendor/lib64/libcdfw.so
 vendor/lib64/libcdfw_remote_api.so
-vendor/lib64/libcdsp_default_listener.so|23a8dff8e8ab66d23c5de9aa3574dd3c64d113b4
-vendor/lib64/libcdsprpc.so|4bdd1d7350e83a964e53931287c5ea3f9b3c5099
-vendor/lib64/libfastcvdsp_stub.so|9813b36faa8029bdb358126c2996207fc7704d32
--vendor/lib64/libfastcvopt.so|0796b9092eb285d7689a8e6c4478a88a1d7e6e87
-vendor/lib64/libmdsprpc.so|4dfd41ece900c72455e194f961f3c47a4fad7272
-vendor/lib64/libsdsprpc.so|4b3bb474f90b3efddd6ddc88afbefa39ce9d08b1
-vendor/lib64/libsysmon_cdsp_skel.so|3ae87b24980f983ba83fd563134328bb0f6f62e8
+vendor/lib64/libcdsp_default_listener.so
+vendor/lib64/libcdsprpc.so
+vendor/lib64/libfastcvdsp_stub.so
+-vendor/lib64/libfastcvopt.so
+vendor/lib64/libmdsprpc.so
+vendor/lib64/libsdsprpc.so
+vendor/lib64/libsysmon_cdsp_skel.so
 
 # Charger (HVDCP)
 vendor/bin/hvdcp_opti
@@ -255,12 +251,12 @@ vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/libwvhidl.so
 
-# DSP service - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
-vendor/bin/dspservice|081468b9bc63cab921ac1e37a95eb93bd16e23f9
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc|fbf2bb38ca6bdddf98c7123da9e1f263a4eec55f
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy|f060101b26d3674bb173e5fc95e118f56a8ac15d
-vendor/lib/vendor.qti.hardware.dsp@1.0.so|0be8b21f30c8aba3381bb1e9279ba0ae9b730c60
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so|e92a9bf499d31770f73cc35e56c6a9d77285ba7c
+# DSP service
+vendor/bin/dspservice
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # ESE - from LA.UM.9.12.r1-14100.01-SMxx50.QSSI13.0
 vendor/bin/hw/vendor.qti.esepowermanager@1.1-service|040212c2c39ca3f2090291dd3a7f49979e5003df
@@ -539,20 +535,17 @@ vendor/etc/init/vendor.xiaomi.hardware.mlipay@1.1-service.rc
 vendor/lib64/libmlipay.so
 vendor/lib64/libmlipay@1.1.so
 
-# Neural networks - from LA.UM.9.12.r1-14100.02-SMxx50.QSSI13.0
-vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti|4e82f7fc9be97e772e6933ae9e92b1e4dc0eb239
-vendor/bin/npu_launcher|a0dfb3ef5b495855c9b25881b696ae73eebb6897
-vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc|4b7f2c5f914f3eef38f19936c0a06efc09b5b28c
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml|57e182a296097870a4c4ed1579c67da20c2b69de
--vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml|ac07e83ba7c2a87a2f216f04ec84df4539ea8507
-vendor/lib/libnpu.so|120988b222a74b236232c94b696528d4c33badcb
-vendor/lib64/libnpu.so|80280ae2197c58dac53471d0d8af090ae844fa22
-vendor/lib64/libhexagon_nn_stub.so|dabb2252d52bfde40d7c1e41487b2912f6d013f3
-vendor/lib64/libhta_hexagon_runtime.so|7e452425e8318dfbf3b90275fb87211ddf585b17
-vendor/lib64/unnhal-acc-adreno.so|716f5ad06387c2271083227674da3f9d5a1fc482
-vendor/lib64/unnhal-acc-common.so|0b1e861dc50ddaa2d9e9fc9e031bda50799d9c0a
-vendor/lib64/unnhal-acc-hta.so|b580e82e816097693badbe3d0f6c7af319ab4245
-vendor/lib64/unnhal-acc-hvx.so|381286e2bf7e3ff611673962548c78dfd35bc297
+# Neural networks
+vendor/bin/hw/android.hardware.neuralnetworks@1.3-service-qti
+vendor/etc/init/android.hardware.neuralnetworks@1.3-service-qti.rc
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti-hta.xml
+-vendor/etc/vintf/manifest/android.hardware.neuralnetworks@1.3-service-qti.xml
+vendor/lib64/libhexagon_nn_stub.so
+vendor/lib64/libhta_hexagon_runtime.so
+vendor/lib64/unnhal-acc-adreno.so
+vendor/lib64/unnhal-acc-common.so
+vendor/lib64/unnhal-acc-hta.so
+vendor/lib64/unnhal-acc-hvx.so
 
 # NFC
 vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf
