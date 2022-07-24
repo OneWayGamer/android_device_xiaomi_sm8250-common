@@ -1,4 +1,4 @@
-# Unpinned blobs from MIUI Alioth 13.0.6 Europe
+# Unpinned blobs from alioth_global-user 12 RKQ1.200826.002 V13.0.3.0.SKHMIXM release-keys
 
 # ADSP
 vendor/bin/adsprpcd
